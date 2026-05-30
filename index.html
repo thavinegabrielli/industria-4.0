@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard SCADA - Indústria 4.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Dashboard Industrial SCADA</h1>
+
+    <div id="acesso">
+      <label for="operador">Nome do Operador:</label><br>
+      <input type="text" id="operador"><br>
+      <button onclick="validarAcesso()">Entrar</button>
+      <p id="msgAcesso"></p>
+    </div>
+
+    <div id="painel" style="display:none;">
+      <h2>Seleção de Máquina</h2>
+      <select id="listaMaquinas" onchange="verificarStatus(this.value)"></select>
+      <p id="statusMaquina"></p>
+
+      <h2>Sensor Térmico</h2>
+      <p>Temperatura: <span id="sensor"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

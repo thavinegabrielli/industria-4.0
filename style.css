@@ -1,0 +1,74 @@
+/* Fundo com imagem industrial */
+body {
+  font-family: monospace;
+  background: url('https://dimatelas.com.br/wp-content/uploads/2018/07/Tecnologia.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container centralizado */
+#container {
+  background-color: rgba(28, 28, 28, 0.9); /* painel escuro translúcido */
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+/* Títulos */
+h1, h2 {
+  color: #00aaff;
+  margin-bottom: 15px;
+}
+
+/* Inputs e botões */
+input, select, button {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+input, select {
+  width: 80%;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Mensagens */
+#msgAcesso {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Classes de alerta */
+.normal {
+  color: #4caf50; /* verde */
+}
+
+.alerta {
+  color: #ff9800; /* laranja */
+  font-weight: bold;
+}
+
+.perigo {
+  color: #f44336; /* vermelho */
+  font-weight: bold;
+  text-transform: uppercase;
+}
